@@ -1,0 +1,199 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:hint="Title"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/repeatCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repeat"
+                android:layout_gravity="bottom"
+                android:padding="8dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/startll"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/startTimeEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:hint="Starting Time in Format 2023-12-30 23:59:59"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/hidedays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide Days"
+                android:layout_gravity="bottom"
+                android:padding="8dp" />
+
+            <CheckBox
+                android:id="@+id/hidehours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide Hours"
+                android:layout_gravity="bottom"
+                android:padding="8dp" />
+
+            <CheckBox
+                android:id="@+id/hidemins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide Mins"
+                android:layout_gravity="bottom"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <!-- Background and Text Color -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/backgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="Background Color"
+                android:tag="@color/default_bg_color"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/default_bg_color" />
+
+            <Button
+                android:id="@+id/textColorButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="Text Color"
+                android:layout_marginTop="8dp"
+                android:tag="@color/default_text_color"
+                android:textColor="@android:color/black"
+                android:background="@color/default_text_color" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/showDatePickerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#008577"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Date" />
+
+            <Button
+                android:id="@+id/showTimePickerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#008577"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:text="Time" />
+
+        </LinearLayout>
+
+        <!-- Date Picker -->
+
+        <!-- Time Picker -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleX="1.1"
+            android:layout_marginTop="16dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Font Size Control -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font Size:"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <SeekBar
+            android:id="@+id/fontSizeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="100"
+            android:progress="50" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Configurations"
+            android:layout_marginTop="16dp"
+            android:background="#008577"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:id="@+id/QazaeUmriWidget">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="6"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <LinearLayout
+            android:id="@+id/vitarbox"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:background="@color/default_bg_color2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/vitarlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noori"
+                android:text="وتر"
+                android:singleLine="true"
+                android:textColor="@color/default_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/vitar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/single_box"
+                android:padding="1dp"
+                android:text="SET"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ishabox"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:background="@color/default_bg_color2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/ishalabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عشاء"
+                android:fontFamily="@font/noori"
+                android:singleLine="true"
+                android:textColor="@color/default_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/isha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/single_box"
+                android:padding="1dp"
+                android:text="SET"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maghribbox"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:background="@color/default_bg_color2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/maghriblabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مغرب"
+                android:fontFamily="@font/noori"
+                android:singleLine="true"
+                android:textColor="@color/default_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/maghrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/single_box"
+                android:padding="1dp"
+                android:text="SET"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/asrbox"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:background="@color/default_bg_color2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/asrlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عصر"
+                android:fontFamily="@font/noori"
+                android:singleLine="true"
+                android:textColor="@color/default_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/asr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/single_box"
+                android:padding="1dp"
+                android:text="SET"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dhuhrbox"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:background="@color/default_bg_color2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/dhuhrlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ظہر"
+                android:fontFamily="@font/noori"
+                android:singleLine="true"
+                android:textColor="@color/default_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/dhuhr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/single_box"
+                android:padding="1dp"
+                android:text="SET"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fajrbox"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_bg_color2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/fajrlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noori"
+                android:text="فجر"
+                android:singleLine="true"
+                android:textColor="@color/default_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/fajr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/single_box"
+                android:padding="1dp"
+                android:text="SET"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/lock"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="2dp" />
+
+</FrameLayout>
