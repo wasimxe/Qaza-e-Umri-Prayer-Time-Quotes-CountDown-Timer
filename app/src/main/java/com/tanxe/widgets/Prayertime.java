@@ -284,9 +284,12 @@ public class Prayertime extends AppWidgetProvider {
                 currentDate = currentDate.minusDays(1);
             }
 
+            // Islamic date changes at Maghrib, not midnight.
+            // After midnight the Gregorian date advances but the Islamic day hasn't ended yet,
+            // so subtract 1 day to keep the same Islamic date until next Maghrib.
             String currentPrayer = prayerTimes.currentPrayer().toString().toLowerCase();
-            if((currentPrayer=="maghrib" || currentPrayer=="isha") && LocalTime.now().isBefore(LocalTime.of(23, 59, 59))){
-                currentDate = currentDate.plusDays(1); // Hijri date updated at 12:00AM. This line To update after maghrib.
+            if(!currentPrayer.equals("maghrib") && !currentPrayer.equals("isha")){
+                currentDate = currentDate.minusDays(1);
             }
 
             islamicDate = HijrahDate.from(currentDate);
